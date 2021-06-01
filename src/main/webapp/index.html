@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="hold-transition">
+        <div>
+            <header class="card notranslate" id="topnav">
+                <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-success">
+                    <div class="container">
+                        <a class="navbar-brand" href="#" style="padding-right: 60%;">Tracker</a>
+                        <div class="collapse navbar-collapse" id="main_nav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="#Patient"> Patient Login </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#Doctor"> Doctor Login </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#Ambulance"> Ambulance Login </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="card content-body bg-light border-none" style="margin: 2%; margin-left: 2%;">
+                <div class="card-body">
+                    <section class="card">
+                        <div class="card-header" style="background-color: #435d77;">
+                            <div class="card-title">
+                                <big style="color: white;">Patient Login</big>
+                            </div>
+                        </div>
+                        <div class="card-body" id="Patient">
+                            <form action="http://localhost:8080/Project_-_5_Hospital_Inpatient_Service/loginPatient" class="form-inline">
+                                <div class="col-10">
+                                    <label class="col-4 float-left text-left" for="patientname" style="padding-left: 0%;"><b>Patient Name: </b></label>
+                                    <input class="col-6" type="text" name="username" style="display:inline-block;" required><br><br>
+					                <label for="phoneno" class="col-4 float-left text-left"><b>Enter Phone Number: </b></label>
+					                <input class="col-6" type="tel" name="phoneno" id="phoneno" style="display:inline-block;" required>
+                                </div>
+                                <div class="float-right">
+                                    <button class="btn btn-secondary" type="submit">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <div class="card-body">
+                    <section class="card">
+                        <div class="card-header" style="background-color: darkgoldenrod;">
+                            <div class="card-title">
+                                <big style="color: white;">Doctor Login</big>
+                            </div>
+                        </div>
+                        <div class="card-body" id="Doctor">
+                            <form action="http://localhost:8080/Project_-_5_Hospital_Inpatient_Service/loginDoctor" class="form-inline">
+                                <div class="col-10">
+                                    <label class="col-4 float-left text-left" for="doctorname" style="padding-left: 0%;"><b>Enter Practitioner Name: </b></label>
+                                    <input class="col-6" type="text" name="username" required><br>
+                                </div>
+                                <div class="float-right">
+                                    <button class="btn btn-secondary" type="submit">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <div class="card-body">
+                    <section class="card">
+                        <div class="card-header" style="background-color: #938f34;">
+                            <div class="card-title">
+                                <big style="color: white;">Ambulance Login</big>
+                            </div>
+                        </div>
+                        <div class="card-body" id="Ambulance">
+                            <form action="http://localhost:8080/Project_-_5_Hospital_Inpatient_Service/loginAmbulance" class="form-inline">
+                                <div class="col-10">
+                                    <label class="col-4 float-left text-left" for="ambulancename" style="padding-left: 0%;"><b>Enter Ambulance Driver Name: </b></label>
+                                    <input class="col-6" type="text" name="username" required><br>
+                                </div>
+                                <div class="float-right">
+                                    <button class="btn btn-secondary" type="submit">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
